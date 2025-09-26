@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio - Tu Nombre</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0">
+    <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Tu Nombre</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-600">Sobre mí</a>
+        <a href="#projects" class="hover:text-blue-600">Proyectos</a>
+        <a href="#skills" class="hover:text-blue-600">Habilidades</a>
+        <a href="#contact" class="hover:text-blue-600">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-4xl font-bold mb-4">Impulsamos tu innovación</h2>
+    <p class="text-lg">Ingeniería electrónica y diseño | Desarrollo de proyectos</p>
+    <div class="mt-6 space-x-4">
+      <a href="#projects" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Ver Proyectos</a>
+      <a href="#contact" class="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600">Contáctame</a>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-4">
+    <h3 class="text-2xl font-semibold mb-4">Sobre mí</h3>
+    <p>
+      Soy un ingeniero apasionado por la electrónica y el diseño de sistemas.
+      Tengo experiencia en desarrollo de hardware, firmware para microcontroladores y soluciones IoT.
+    </p>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="bg-gray-100 py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-8">Proyectos</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Proyecto 1 -->
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="assets/proyecto1.png" alt="Proyecto 1" class="rounded-lg mb-4">
+          <h4 class="font-bold">Proyecto 1</h4>
+          <p class="text-sm text-gray-600">Descripción breve del proyecto.</p>
+          <a href="#" class="text-blue-600 text-sm hover:underline">Ver más</a>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="assets/proyecto2.png" alt="Proyecto 2" class="rounded-lg mb-4">
+          <h4 class="font-bold">Proyecto 2</h4>
+          <p class="text-sm text-gray-600">Descripción breve del proyecto.</p>
+          <a href="#" class="text-blue-600 text-sm hover:underline">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="skills" class="max-w-5xl mx-auto py-16 px-4">
+    <h3 class="text-2xl font-semibold mb-8">Habilidades</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4 bg-white rounded-xl shadow">C / C++</div>
+      <div class="p-4 bg-white rounded-xl shadow">Python</div>
+      <div class="p-4 bg-white rounded-xl shadow">Arduino / ESP32</div>
+      <div class="p-4 bg-white rounded-xl shadow">Diseño PCB</div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="bg-blue-600 text-white py-16">
+    <div class="max-w-3xl mx-auto text-center px-4">
+      <h3 class="text-2xl font-semibold mb-4">Contacto</h3>
+      <p>¿Quieres trabajar conmigo o conocer más sobre mis proyectos?</p>
+      <div class="mt-6 space-x-4">
+        <a href="mailto:tuemail@example.com" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Enviar Email</a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
+    © 2025 Tu Nombre - Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
