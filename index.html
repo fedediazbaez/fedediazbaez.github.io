@@ -3,93 +3,190 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portfolio - Tu Nombre</title>
+  <title>Portfolio - FDB</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0">
-    <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold">Tu Nombre</h1>
-      <nav class="space-x-4">
-        <a href="#about" class="hover:text-blue-600">Sobre mí</a>
-        <a href="#projects" class="hover:text-blue-600">Proyectos</a>
-        <a href="#skills" class="hover:text-blue-600">Habilidades</a>
-        <a href="#contact" class="hover:text-blue-600">Contacto</a>
-      </nav>
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Federico Díaz Báez</h1>
+
+      <!-- Language Switch -->
+      <div>
+        <button onclick="setLanguage('es')" class="px-3 py-1 bg-gray-200 rounded-l hover:bg-gray-300">ES</button>
+        <button onclick="setLanguage('en')" class="px-3 py-1 bg-gray-200 rounded-r hover:bg-gray-300">EN</button>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-    <h2 class="text-4xl font-bold mb-4">Impulsamos tu innovación</h2>
-    <p class="text-lg">Ingeniería electrónica y diseño | Desarrollo de proyectos</p>
-    <div class="mt-6 space-x-4">
-      <a href="#projects" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Ver Proyectos</a>
-      <a href="#contact" class="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600">Contáctame</a>
+  <!-- HERO -->
+  <section>
+    <!-- Español -->
+    <div id="hero-es" class="lang text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+      <h2 class="text-4xl font-bold mb-4">Impulsamos tu innovación</h2>
+      <p class="text-lg">Ingeniería electrónica | Diseño | Desarrollo de proyectos</p>
+      <div class="mt-6">
+        <a href="#projects-es" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Ver proyectos</a>
+      </div>
+    </div>
+
+    <!-- English -->
+    <div id="hero-en" class="lang hidden text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+      <h2 class="text-4xl font-bold mb-4">Driving your innovation</h2>
+      <p class="text-lg">Electronics engineering | Design | Project development</p>
+      <div class="mt-6">
+        <a href="#projects-en" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">View projects</a>
+      </div>
     </div>
   </section>
 
-  <!-- Sobre mí -->
-  <section id="about" class="max-w-5xl mx-auto py-16 px-4">
-    <h3 class="text-2xl font-semibold mb-4">Sobre mí</h3>
-    <p>
-      Soy un ingeniero apasionado por la electrónica y el diseño de sistemas.
-      Tengo experiencia en desarrollo de hardware, firmware para microcontroladores y soluciones IoT.
-    </p>
+  <!-- ABOUT -->
+  <section>
+    <!-- Español -->
+    <div id="about-es" class="lang max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-3xl font-semibold mb-6">Sobre mí</h3>
+      <p class="mb-4">
+        Desde chico me apasionó entender cómo funcionan las cosas y repararlas para ayudar a quienes me rodean. Esa curiosidad me llevó a la electrónica, primero en la tecnicatura de la secundaria y después en la <strong>Universidad Tecnológica Nacional (UTN), Córdoba</strong>.
+      </p>
+      <p class="mb-4">
+        Durante la universidad participé en un laboratorio de investigación, donde aprendí Linux, procesamiento de imágenes y robótica, además de presentar papers en congresos nacionales sobre sistemas de control y firmware embebido.
+      </p>
+      <p class="mb-4">
+        Al graduarme ingresé como ingeniero de I+D en una empresa de <em>resonancia magnética nuclear industrial</em>, donde adquirí experiencia en potencia, RF, sistemas embebidos y FPGA. Con el tiempo asumí roles de liderazgo, coordinando transferencias tecnológicas con clientes internacionales.
+      </p>
+      <p>
+        Hoy ofrezco servicios de consultoría y desarrollo electrónico para empresas que necesitan soluciones técnicas especializadas sin afectar su negocio principal, ayudándolas a resolver desafíos de manera eficiente.
+      </p>
+    </div>
+
+    <!-- English -->
+    <div id="about-en" class="lang hidden max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-3xl font-semibold mb-6">About me</h3>
+      <p class="mb-4">
+        Ever since I was a kid, I loved figuring out how things work and fixing them to help others. That curiosity led me to electronics — first through a technical high school program, and later at the <strong>Universidad Tecnológica Nacional (UTN), Córdoba</strong>.
+      </p>
+      <p class="mb-4">
+        At university I joined a research lab where I learned Linux, image processing and robotics, and presented papers at national conferences on control systems and embedded firmware.
+      </p>
+      <p class="mb-4">
+        After graduating I started as an R&D engineer at a company building <em>industrial nuclear magnetic resonance</em> equipment, where I gained experience in power electronics, RF, embedded systems and FPGA design. Over time I also moved into project leadership, coordinating technology transfers with international clients.
+      </p>
+      <p>
+        Today I offer consulting and development services for companies that need specialized electronic expertise without making it their core business — helping them solve technical challenges efficiently.
+      </p>
+    </div>
   </section>
 
-  <!-- Proyectos -->
-  <section id="projects" class="bg-gray-100 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-2xl font-semibold mb-8">Proyectos</h3>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Proyecto 1 -->
-        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
-          <img src="assets/proyecto1.png" alt="Proyecto 1" class="rounded-lg mb-4">
-          <h4 class="font-bold">Proyecto 1</h4>
-          <p class="text-sm text-gray-600">Descripción breve del proyecto.</p>
-          <a href="#" class="text-blue-600 text-sm hover:underline">Ver más</a>
+  <!-- PROJECTS -->
+  <section>
+    <!-- Español -->
+    <div id="projects-es" class="lang bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-8">Proyectos</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white p-4 rounded-xl shadow">
+            <h4 class="font-bold">Proyecto 1</h4>
+            <p class="text-sm text-gray-600">Para garantizar la comunicacion de una red de sensores dedicados a la domotica, esta placa electrónica es capaz de administrar el protocolo de comunicacion propietario, asi como tambien arbitrar funciones de arranque y actualizacion de firmware en unidades remotas.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow">
+            <h4 class="font-bold">Proyecto 2</h4>
+            <p class="text-sm text-gray-600">Descripción breve de tu proyecto aquí.</p>
+          </div>
         </div>
-        <!-- Proyecto 2 -->
-        <div class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
-          <img src="assets/proyecto2.png" alt="Proyecto 2" class="rounded-lg mb-4">
-          <h4 class="font-bold">Proyecto 2</h4>
-          <p class="text-sm text-gray-600">Descripción breve del proyecto.</p>
-          <a href="#" class="text-blue-600 text-sm hover:underline">Ver más</a>
+      </div>
+    </div>
+
+    <!-- English -->
+    <div id="projects-en" class="lang hidden bg-gray-100 py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-8">Projects</h3>
+        <div class="grid md:grid-cols-4 gap-6">
+          <div class="bg-white p-4 rounded-xl shadow">
+            <h4 class="font-bold">To ensure communication between a network of sensors dedicated to home automation, this electronic board is capable of managing the proprietary communication protocol, as well as arbitrating startup and firmware update functions on remote units.</h4>
+            <p class="text-sm text-gray-600">.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow">
+            <h4 class="font-bold">Project 2</h4>
+            <p class="text-sm text-gray-600">Brief description of your project here.</p>
+          </div>
+           <div class="bg-white p-4 rounded-xl shadow">
+            <h4 class="font-bold">To ensure communication between a network of sensors dedicated to home automation, this electronic board is capable of managing the proprietary communication protocol, as well as arbitrating startup and firmware update functions on remote units.</h4>
+            <p class="text-sm text-gray-600">.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl shadow">
+            <h4 class="font-bold">Project 2</h4>
+            <p class="text-sm text-gray-600">Brief description of your project here.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Habilidades -->
-  <section id="skills" class="max-w-5xl mx-auto py-16 px-4">
-    <h3 class="text-2xl font-semibold mb-8">Habilidades</h3>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <div class="p-4 bg-white rounded-xl shadow">C / C++</div>
-      <div class="p-4 bg-white rounded-xl shadow">Python</div>
-      <div class="p-4 bg-white rounded-xl shadow">Arduino / ESP32</div>
-      <div class="p-4 bg-white rounded-xl shadow">Diseño PCB</div>
+  <!-- SKILLS -->
+  <section>
+    <!-- Español -->
+    <div id="skills-es" class="lang max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-semibold mb-8">Habilidades</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 bg-white rounded-xl shadow">C / C++</div>
+        <div class="p-4 bg-white rounded-xl shadow">Radio Frecuencias</div>
+        <div class="p-4 bg-white rounded-xl shadow">Sistemas embebidos</div>
+        <div class="p-4 bg-white rounded-xl shadow">Diseño PCB (Altium/KiCAD)</div>
+      </div>
+    </div>
+
+    <!-- English -->
+    <div id="skills-en" class="lang hidden max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-2xl font-semibold mb-8">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4 bg-white rounded-xl shadow">C / C++</div>
+        <div class="p-4 bg-white rounded-xl shadow">Radio Frequency</div>
+        <div class="p-4 bg-white rounded-xl shadow">Embedded Systems</div>
+        <div class="p-4 bg-white rounded-xl shadow">PCB Design (Altium/KiCAD)</div>
+      </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contact" class="bg-blue-600 text-white py-16">
-    <div class="max-w-3xl mx-auto text-center px-4">
+  <!-- CONTACT -->
+  <section>
+    <!-- Español -->
+    <div id="contact-es" class="lang bg-blue-600 text-white py-16 text-center">
       <h3 class="text-2xl font-semibold mb-4">Contacto</h3>
-      <p>¿Quieres trabajar conmigo o conocer más sobre mis proyectos?</p>
-      <div class="mt-6 space-x-4">
-        <a href="mailto:tuemail@example.com" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Enviar Email</a>
-        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="border border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600">LinkedIn</a>
-      </div>
+      <p class="mb-6">¿Quieres trabajar conmigo o conocer más sobre mis proyectos?</p>
+      <a href="mailto:f.diazbaez@gmail.com" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Enviar Email</a>
+    </div>
+
+    <!-- English -->
+    <div id="contact-en" class="lang hidden bg-blue-600 text-white py-16 text-center">
+      <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+      <p class="mb-6">Want to work with me or learn more about my projects?</p>
+      <a href="mailto:fdiazbaez@gmail.com" class="bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-100">Send Email</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-6 text-center text-sm">
-    © 2025 Tu Nombre - Todos los derechos reservados
+  <!-- FOOTER -->
+  <footer>
+    <!-- Español -->
+    <div id="footer-es" class="lang bg-gray-900 text-gray-400 py-6 text-center text-sm">
+      © 2025 dbingenieria.com.ar - Todos los derechos reservados
+    </div>
+
+    <!-- English -->
+    <div id="footer-en" class="lang hidden bg-gray-900 text-gray-400 py-6 text-center text-sm">
+      © 2025 dbingenieria.com.ar - All rights reserved
+    </div>
   </footer>
+
+  <!-- Script cambio de idioma -->
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll(`#hero-${lang}, #about-${lang}, #projects-${lang}, #skills-${lang}, #contact-${lang}, #footer-${lang}`)
+        .forEach(el => el.classList.remove('hidden'));
+    }
+  </script>
 
 </body>
 </html>
